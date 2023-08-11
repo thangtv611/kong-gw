@@ -1,0 +1,13 @@
+###########################
+# Register new service, at least 2 information:
+# service name
+# service endpoint
+
+POST /services HTTP/1.1
+Host: localhost:8001
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 50
+
+name=hello-world&url=http%3A%2F%2Flocalhost%3A5050
+
+#########################

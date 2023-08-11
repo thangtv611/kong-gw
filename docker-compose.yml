@@ -16,7 +16,6 @@ services:
       - "8001:8001"
       - "8444:8444"
 
-
   kong-dashboard:
     container_name: kong_dashboard
     image: pgbi/kong-dashboard
@@ -25,3 +24,8 @@ services:
       - "8080:8080"
     depends_on:
       - kong
+
+  backend:
+    image: vad1mo/hello-world-rest
+    ports:
+      - "5050:5050"
